@@ -66,7 +66,7 @@ const next = document.querySelector(".next");
 next.addEventListener("click", 
 function(){
     pos = pos + 1;
-    if(pos > 4){
+    if(pos > text.length - 1){
         pos = 0
     };
     console.log(pos);
@@ -88,7 +88,7 @@ before.addEventListener("click",
 function(){
     pos = pos - 1;
     if(pos < 0){
-        pos = 4
+        pos = items.length - 1
     };
     console.log(pos);
     document.querySelector(".sub-img.active").classList.remove("active");
